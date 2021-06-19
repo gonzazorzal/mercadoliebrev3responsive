@@ -1,0 +1,113 @@
+/* se arranca por el .home porque al body se le da esa clase y de ahi se hace todo en cascada para que vaya afectando a todo */
+/*                     Header                  */
+.home header{
+    background-color: var(--color-amarillo);
+}
+.home header img{
+    width: 50%;
+    margin: 5% 0% 5% 23%;
+}
+.home header form{
+    margin: 0% 0% 5% 23%;
+}
+.home header div{
+    position: relative;
+}
+.home header div i{
+position:absolute;
+left: 14%;
+bottom: 21%;
+}
+.home header h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+ .home header nav{
+    display: none;
+} 
+
+
+.home header .burger-menu{
+    color: var(--color-grisclaro);
+    background-color: var(--color-celeste);
+    margin-left: 45% ; 
+    margin-bottom: 10px;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 20%;
+
+}
+/*                     Main                  */
+.home main{
+    width: 90%;
+    margin: auto;
+}
+.home main .banner{
+    display: none;
+}
+.home main h2{
+    font-size:24px ;
+    margin: 10px 0px 10px 0px; /* primero  arriba segundo a la derecha tercero abajo y ultimo a la izquierda reloj analogico */
+}
+.home main article{
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.home main article div{
+    border-top: 1px solid var(--color-grisclaro);
+    padding: 10px;
+}
+.home main div i{
+    color: var(--color-verde);
+    margin-bottom: 10px;
+}
+.home main .precio{
+    font-size: 18px;
+}
+.home main .descuento{
+   font-size: 16px;
+   color: var(--color-verde);
+   margin: 6px 0px;
+}
+.home main .descripcion{
+    font-size: 16px;
+}
+/*                     Footer                 */
+.home footer{
+    color: #666;
+    margin-top: 30px;
+    background-color: white;
+    text-align: center;
+}
+.home footer article{ /* se arranca por el .home porque al body se le da esa clase y de ahi se hace todo en cascada para que vaya afectando a todo */
+    margin-bottom: 25px;
+    padding-top: 25px;
+    }
+
+.home footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+.home footer  .copyrigth{
+    padding-bottom: 30px;
+}
+
+@media (min-width:361px){
+    /* header */
+    .home header .burger-menu{
+        display: none;
+    }
+    .home header nav, a{
+        display: initial;
+        color: black;
+        text-align: center;
+    }
+
+    .home header nav  .primerUl, .segundoUl, li{
+        margin: 10px 0px; 
+    }
+
+}
+
